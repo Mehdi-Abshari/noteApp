@@ -1,26 +1,86 @@
-body {
-  margin: 0;
+@font-face {
+    font-family: IRANYekan;
+    src: url(../fonts/IRANYekanXVF.ttf);
 }
 
-.modal-box {
+* {
+    font-family: IRANYekan;
 }
+
+body {
+    margin: 0;
+}
+
+.modal-box {}
 
 .modal {
-  background-color: blue;
-  max-width: 800px;
-  min-width: 700px;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
+    background-color: #e9eef2;
+    max-width: 800px;
+    min-width: 700px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
 
-.content > header > div {
-  display: flex;
-  flex-direction: row-reverse;
+.content>header {
+    padding: 10px 20px;
 }
 
-.content > header > div > ion-icon {
-  color: #8b8989;
-  font-size: 40px;
+.content>header>div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.content>header>div>ion-icon {
+    color: #8b8989;
+    font-size: 40px;
+}
+
+.content>form {
+    margin: 15px 20px 20px;
+}
+
+.description>label,
+.title>label {
+    margin-bottom: 10px;
+}
+
+.description,
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.description,
+form>button {
+    margin-top: 20px;
+}
+
+.title>input {
+    width: 200px;
+    height: 30px;
+}
+
+.title>input,
+.description>textarea {
+    outline: none;
+}
+
+.description>textarea {
+    min-width: 700px;
+    max-width: 760px;
+    min-height: 150px;
+    resize: none;
+    padding: 7px;
+}
+
+form>button {
+    width: 100%;
+    height: 45px;
+    background-color:#0165ba ;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
 }
