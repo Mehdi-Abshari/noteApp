@@ -2,49 +2,84 @@
 <html lang="en" dir="rtl">
 
 <head>
+    <!-- JS link -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- JS link -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <title>Document</title>
+    <!-- CSS link -->
     <link rel="stylesheet" href="assets/CSS/style.css">
+
+    <!-- Site title -->
+    <title>noteApp</title>
+
+    <!-- Site icon -->
+    <link rel="icon" href="">
 
 </head>
 
 <body>
+    <!-- Start of modal box -->
     <div class="modal-box">
+        <!-- Start of modal -->
         <div class="modal">
+            <!-- Start of content -->
             <div class="content">
+                <!-- Start of modal header -->
                 <header>
                     <h4></h4>
                     <div><ion-icon name="close-outline"></ion-icon></div>
                     <hr>
                 </header>
+                <!-- End of modal header -->
+
+                <!-- Start of form -->
                 <form action="">
+                    <!-- Start of title part -->
                     <div class="title">
                         <label>عنوان</label>
                         <input type="text">
                     </div>
+                    <!-- End of title part -->
+
+                    <!-- Start of description part -->
                     <div class="description">
                         <label>شرح</label>
                         <textarea></textarea>
                     </div>
+                    <!-- End of description part -->
+
+                    <!-- Start button for save and edit note -->
                     <button></button>
+                    <!-- End button for save and edit note -->
                 </form>
+                <!-- End of form -->
             </div>
+            <!-- End of content -->
         </div>
+        <!-- End of modal -->
     </div>
+    <!-- End of modal box -->
 
+    <!-- Start of add new note box -->
     <div class="add-note">
+        <!-- Start of add box -->
         <a class="add-box">
-          <div class="icon"><ion-icon name="add-outline"></ion-icon></div>
-          <p>اضافه کردن یادداشت جدید</p>
-        </a>
-      </div>
+            <!-- Start of icon -->
+            <div class="icon">
+                <ion-icon name="add-outline"></ion-icon>
+            </div>
+            <!-- End of icon -->
 
+            <p>اضافه کردن یادداشت جدید</p>
+        </a>
+        <!-- End of add box -->
+    </div>
+    <!-- End of add new note box -->
+
+    <!-- JS link -->
     <script src="assets/JS/script.js"></script>
 </body>
 
