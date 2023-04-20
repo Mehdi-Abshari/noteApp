@@ -1,86 +1,105 @@
+/* Fonts */
 @font-face {
-    font-family: IRANYekan;
-    src: url('../fonts/IRANYekanXVF.ttf');
+  font-family: Iran-Yekan;
+  src: url("../fonts/IRANYekanXVF.ttf");
 }
 
+/* All Selector */
 * {
-    font-family: IRANYekan;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: Iran-Yekan;
 }
-
 body {
-    margin: 0;
+  background-color: #ddd0c8;
 }
 
-.modal-box {}
-
+/* Modal box Style */
+.modal-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+/* Modal Style */
 .modal {
-    background-color: #e9eef2;
-    max-width: 800px;
-    min-width: 700px;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+  background-color: #e9eef2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  width: 100%;
+  max-width: 400px;
+  justify-content: center;
+  transform: translate(-50%, -50%) scale(0.95);
 }
-
-.content>header {
-    padding: 10px 20px;
+/* Header content Style */
+.content > header {
+  padding: 15px 25px;
+  border-bottom: 1px solid #ccc;
 }
-
-.content>header>div {
-    display: flex;
-    flex-direction: row-reverse;
+/* Exit icon div Style */
+.content > header > div {
+  display: flex;
+  flex-direction: row-reverse;
 }
-
-.content>header>div>ion-icon {
-    color: #8b8989;
-    font-size: 40px;
+/* Exit icon Style */
+.content > header > div > ion-icon {
+  color: #8b8989;
+  cursor: pointer;
+  font-size: 23px;
 }
-
-.content>form {
-    margin: 15px 20px 20px;
+/* Form content Style */
+.content > form {
+  margin: 15px 25px 35px;
 }
-
-.description>label,
-.title>label {
-    margin-bottom: 10px;
+/* Title and description form Style */
+form > .title,
+form > .description {
+  margin-bottom: 20px;
 }
-
-.description,
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+/* Label form Style */
+form label {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
 }
-
-.description,
-form>button {
-    margin-top: 20px;
+/* Input and textarea form Style */
+form > .title > input,
+form > .description > textarea {
+  height: 50px;
+  width: 100%;
+  font-size: 17px;
+  padding: 0 15px;
+  border-radius: 4px;
+  border: 1px solid #999;
 }
-
-.title>input {
-    width: 200px;
-    height: 30px;
+/* Input and textarea focus Style */
+form > .title > input:focus,
+form > .description > textarea:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.11);
 }
-
-.title>input,
-.description>textarea {
-    outline: none;
+/* Textarea form Style */
+form > .description > textarea {
+  height: 150px;
+  padding: 8px 15px;
+  resize: none;
 }
-
-.description>textarea {
-    min-width: 700px;
-    max-width: 760px;
-    min-height: 150px;
-    resize: none;
-    padding: 7px;
-}
-
-form>button {
-    width: 100%;
-    height: 45px;
-    background-color:#0165ba ;
-    border-radius: 5px;
-    color: white;
-    font-size: 18px;
+/* Button form Style */
+form button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #323232;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
 }
