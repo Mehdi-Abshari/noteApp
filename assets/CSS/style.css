@@ -16,7 +16,7 @@
 body {
   background-color: #ddd0c8;
 }
-
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 /* Modal box Style */
 .modal-box {
   position: fixed;
@@ -35,7 +35,7 @@ body {
   left: 50%;
   z-index: 3;
   width: 100%;
-  max-width: 400px;
+  max-width: 700px;
   justify-content: center;
   transform: translate(-50%, -50%) scale(0.95);
 }
@@ -51,9 +51,9 @@ body {
 }
 /* Exit icon Style */
 .content > header > div > ion-icon {
-  color: #8b8989;
+  color: #6b6b6b;
   cursor: pointer;
-  font-size: 23px;
+  font-size: 25px;
 }
 /* Form content Style */
 .content > form {
@@ -103,3 +103,41 @@ form button {
   font-size: 17px;
   cursor: pointer;
 }
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+/* Add note Style */
+.add-note {
+  display: flex;
+  margin: 50px;
+}
+/* Add box Style */
+.add-box {
+  height: 250px;
+  border-radius: 5px;
+  padding: 15px 50px 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+/* Icon add box Style */
+.add-box > .icon {
+  height: 78px;
+  width: 78px;
+  color: #323232;
+  border-radius: 50%;
+  border: 2px dashed #323232;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Paragraph add box Style */
+.add-box p {
+  color: #323232;
+  margin-top: 20px;
+  font-weight: 500;
+}
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
